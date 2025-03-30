@@ -1,13 +1,11 @@
 import { assets } from "@/assets/assets"
 import { Github } from "lucide-react"
 import Image from "next/image"
-import { Dispatch, SetStateAction } from "react"
 
 type FooterProps = {
     isDarkMode : boolean
-    setIsDarkMode : Dispatch<SetStateAction<boolean>>
 }
-const Footer = ({isDarkMode , setIsDarkMode}:FooterProps) => {
+const Footer = ({}:FooterProps) => {
     return(
         <div id="contact" className=" mt-20">
             <div className=" text-center">

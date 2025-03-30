@@ -20,6 +20,7 @@ import MobileIcon from "./mobile-icon.png"
 import GraphicIcon from "./graphics-icon.png"
 import RightArrow from "./right-arrow.png"
 import RightArrowBold from "./right-arrow-bold.png"
+import RightArrowBoldDark from "./right-arrow-bold-dark.png"
 import MainIcon from "./mail_icon.png"
 import Logo from "./logo.png"
 import MenuWhite from "./menu-white.png"
@@ -45,7 +46,8 @@ export const assets = {
     Logo,
     MainIcon,
     MenuWhite,
-    CloseWhite
+    CloseWhite,
+    RightArrowBoldDark
 }
 
 type Info = {

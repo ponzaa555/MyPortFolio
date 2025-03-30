@@ -1,11 +1,9 @@
 "use client"
-import Image from "next/image";
 import NavBar from "./components/NavBar";
 import Header from "./components/Header";
 import About from "./components/About";
 import Project from "./components/Project";
 import Activity from "./components/Activity";
-import Contract from "./components/Contract";
 import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
 export default function Home() {
@@ -30,12 +28,11 @@ export default function Home() {
   return (
     <>
       < NavBar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
-      <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
-      <About isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
-      <Project isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
-      <Activity isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
-      {/* <Contract/> */}
-      <Footer isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
+      <Header isDarkMode={isDarkMode} />
+      <About isDarkMode={isDarkMode} />
+      <Project isDarkMode={isDarkMode} />
+      <Activity isDarkMode={isDarkMode} />
+      <Footer isDarkMode={isDarkMode} />
     </>
   );
 }

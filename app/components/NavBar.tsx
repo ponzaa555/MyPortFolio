@@ -55,7 +55,7 @@ const NavBar = ({isDarkMode , setIsDarkMode}: NavBarProps) => {
                 </ul>
                 
                 <div className=" flex items-center gap-4">
-                <button onClick={() => setIsDarkMode(prev => !prev)}>
+                <button onClick={() => setIsDarkMode(prev => !prev)} className=" cursor-pointer">
                     {
                         isDarkMode ? (
                             <>
