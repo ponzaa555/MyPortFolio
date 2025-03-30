@@ -14,6 +14,16 @@ import ProjectIconDark from "./project-icon-dark.png"
 import Vscode from "./vscode.png"
 import MongoDb from "./mongodb.png"
 import GitHub from "./git.png"
+import WebIcon from "./web-icon.png"
+import SendIcon from "./send-icon.png"
+import MobileIcon from "./mobile-icon.png"
+import GraphicIcon from "./graphics-icon.png"
+import RightArrow from "./right-arrow.png"
+import RightArrowBold from "./right-arrow-bold.png"
+import MainIcon from "./mail_icon.png"
+import Logo from "./logo.png"
+import MenuWhite from "./menu-white.png"
+import CloseWhite from "./close-white.png"
 import { Info } from "lucide-react"
 import { StaticImageData } from "next/image"
 export const assets = {
@@ -29,6 +39,13 @@ export const assets = {
     Vscode,
     MongoDb,
     GitHub,
+    RightArrow,
+    SendIcon,
+    RightArrowBold,
+    Logo,
+    MainIcon,
+    MenuWhite,
+    CloseWhite
 }
 
 type Info = {
@@ -38,6 +55,18 @@ type Info = {
     describtion: string;
 }
 
+type Project = {
+    icon: StaticImageData;
+    title: string;
+    describion: string;
+    link: string;
+}
+
+type ActivityData = {
+    tittle: string;
+    describtion : string;
+    bgImage : string;
+}
 export const infoList :Info[] = [
     {
         icon: CodeIcon,
@@ -63,3 +92,49 @@ export const toolData:StaticImageData[] =
 [
     assets.Vscode , assets.MongoDb , assets.GitHub
 ]
+
+
+
+export const projectList:Project[] = [
+    {
+        icon: WebIcon,
+        title: "Web Development",
+        describion: "I can create a website using HTML, CSS, and JavaScript. I can also use frameworks like React, Next.js, and Tailwind CSS.",
+        link: ""
+    },
+    {
+        icon: MobileIcon,
+        title: "Mobile Development",
+        describion: "I can create a mobile application using React Native.",
+        link: ""
+    },
+    {
+        icon: GraphicIcon,
+        title: "Graphic Design",
+        describion: "I can create a logo, banner, and other graphic design using Adobe Illustrator.",
+        link: ""
+    }
+]
+
+export const ActivityAssets : ActivityData[] = [
+    {
+        tittle : "Frontend Project",
+        describtion : "Web design",
+        bgImage : "/work-1.png"
+    },
+    {
+        tittle : "Backend Go",
+        describtion : "Mobile App",
+        bgImage: "/work-2.png"
+    },
+    {
+        tittle : "Photography Site",
+        describtion : "Web design",
+        bgImage : "/work-3.png"
+    },
+    {
+        tittle : "UX/UI Design",
+        describtion : "Scott Clean Care",
+        bgImage : "/work-4.png"
+    }
+] 

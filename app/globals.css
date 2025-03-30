@@ -3,6 +3,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ovo:wght@400&display=swap");
+@custom-variant dark (&:where(.dark, .dark *));
 /* @import "postcss.config.mjs"; */
 
 
@@ -17,6 +18,15 @@
   --color-lightHover: #fcf4ff;
   --shadow-black:4px 4px 0 #000;
   --shadow-white:4px 4px 0 #fff;
+  --grid-auto-columns:repeat(auto-fit, minmax(200px, 1fr));
+  --color-darkTheme: #11001F;
+  --color-darkHover: rgba(30, 0, 50, 1);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: var(--grid-auto-columns); /* Use the custom variable */
+  gap: 20px; /* Optional gap between items */
 }
 
 .font-ovo {
