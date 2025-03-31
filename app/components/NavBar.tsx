@@ -1,5 +1,5 @@
 import { assets } from "@/assets/assets";
-import { ArrowUpRight, Moon, Sun } from "lucide-react";
+import { ArrowUpRight, Moon, SquareTerminal, Sun } from "lucide-react";
 import Image from "next/image";
 import React, { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
 
@@ -42,8 +42,10 @@ const NavBar = ({isDarkMode , setIsDarkMode}: NavBarProps) => {
         {/* Add dynamic classname base on scroll value */}
             <nav className={` w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50
                     ${isScroll ? " bg-opacity-50 backdrop-blur-lg shadow-sm" : ""}`}>
-                <a href="#top">
-                    <Image src={assets.Profile} alt="Profile" className=" w-28 cursor-pointer h-14 mr-14" />
+                <a href="#top" className=" flex items-center gap-2 ">
+                    <SquareTerminal size={30}/>
+                    <span className=" text-xl font-bold">cd ~/</span>
+                    <SquareTerminal size={30}/>
                 </a>
                 <ul className={`hidden md:flex items-center gap-6 lg:gap-8 px-12 py-3   rounded-full
                          ${isScroll ? " " : "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:border dark:border-white/50 dark:bg-transparent "} `}>

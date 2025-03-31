@@ -7,7 +7,6 @@ type AboutProps = {
 }
 const About = ({isDarkMode}:AboutProps) => {
     return(
-    <>
     <motion.div id="about" className=" w-full px-[12%] py-10 scroll-mt-20"
         initial={{opacity:0}}
         whileInView={{opacity:1 , y:0}}
@@ -40,10 +39,12 @@ const About = ({isDarkMode}:AboutProps) => {
                 whileInView={{opacity:1}}
                 transition={{duration:0.6 , delay:0.8}}>
                      <p className=" mb-10 max-w-2xl font-ovo">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur totam, assumenda facilis, 
-                        at adipisci saepe quas placeat laudantium deleniti ratione dolore ullam corrupti! 
-                        Quas consequatur tempore explicabo quasi, 
-                        debitis atque illo praesentium eius perferendis temporibus pariatur alias nulla recusandae nostrum.
+                     I recently graduated with a Bachelor's degree in Computer Engineering from Kasetsart University. 
+                     During my internship at TCC Company, I worked as a backend developer, 
+                     where I contributed to enhancing the system for point-of-sale machines using C#, .NET Framework, and Golang. 
+                     My outgoing nature and adaptability, due to playing basketball with new people in unfamiliar environments, 
+                     have shaped my ability to collaborate effectively with others in a variety of situations. Looking ahead, 
+                     I aspire to deepen my expertise in backend systems and pursue a Master's degree in Cybersecurity to further advance my knowledge and career in this field.
                     </p>
                     {/* List Skill */}
                     <motion.ul className=" grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl "
@@ -84,7 +85,6 @@ const About = ({isDarkMode}:AboutProps) => {
                 </motion.div>
             </motion.div>
         </motion.div>
-    </>
     )
 }
 

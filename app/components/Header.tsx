@@ -27,11 +27,11 @@ const Header = ({isDarkMode}:HeaderProps) => {
                     transition={{duration:0.8 , delay:0.5}}>
                     Backend Developer 
                 </motion.h1>
-                <motion.p className="max-w-2xl mx-auto font-ovo">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Ab quae optio error impedit id nulla iste sapiente ex ipsum officia? Lorem, 
-                    ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quaerat temporibus 
-                    quis tempore nisi quasi eum quam sunt! Rerum, laborum?
+                <motion.p className="max-w-3xl font-ovo text-lg mx-auto">
+                I am a recent graduate of Kasetsart University with a Bachelor’s degree in Computer Engineering. 
+                I am seeking entry-level opportunities as a Backend Developer, Full Stack Developer, 
+                or Cyber Security. I have practical experience working with C#, TypeScript, Golang, and SQL, and 
+                I am especially interested in pursuing a career in Cybersecurity Engineering.
                 </motion.p>
                 <div className=" flex flex-col sm:flex-row items-center gap-4 mt-4">
                     <motion.a href="#contact"

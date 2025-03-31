@@ -13,7 +13,7 @@ import ProjectIcon from "./project-icon.png"
 import ProjectIconDark from "./project-icon-dark.png"
 import Vscode from "./vscode.png"
 import MongoDb from "./mongodb.png"
-import GitHub from "./git.png"
+import GitHub from "./githubIcon.png"
 import WebIcon from "./web-icon.png"
 import SendIcon from "./send-icon.png"
 import MobileIcon from "./mobile-icon.png"
@@ -27,6 +27,14 @@ import MenuWhite from "./menu-white.png"
 import CloseWhite from "./close-white.png"
 import { Info } from "lucide-react"
 import { StaticImageData } from "next/image"
+import Company from "./building.svg"
+import CompanyWhite from "./Bwhite.svg"
+import Golang from "./golangIcon.png"
+import Ts from "./TsIcon.png"
+import Csharp from "./Csharp.png"
+import Mysql from "./mySql.png"
+import Postgres from "./postgrest.png"
+import Nextjs from "./NextIcon.png"
 export const assets = {
     Profile,
     BackgroutProfile,
@@ -47,7 +55,13 @@ export const assets = {
     MainIcon,
     MenuWhite,
     CloseWhite,
-    RightArrowBoldDark
+    RightArrowBoldDark,
+    Golang,
+    Ts,
+    Csharp,
+    Mysql,
+    Postgres,
+    Nextjs
 }
 
 type Info = {
@@ -71,28 +85,28 @@ type ActivityData = {
 }
 export const infoList :Info[] = [
     {
-        icon: CodeIcon,
-        iconDark: IconDark,
-        title: "Web Development",
-        describtion: "I can create a website using HTML, CSS, and JavaScript. I can also use frameworks like React, Next.js, and Tailwind CSS."
+        icon: Company,
+        iconDark: CompanyWhite,
+        title: "Internship",
+        describtion: "During my 10-month internship at TCC Company, I had the opportunity to work as a backend developer focusing on improving the system for point-of-sale (POS) using C# and the .NET Framework"
     },
     {
         icon: EducationIcon,
         iconDark: EducationIconDark,
         title: "Education",
-        describtion: "I am a student at the University of Indonesia majoring in Informatics Engineering."
+        describtion: "I am graduated with a Bachelor's degree in Computer Engineering from Kasetsart University"
     },
     {
         icon: ProjectIcon,
         iconDark: ProjectIconDark,
-        title: "Projects",
-        describtion: "I have made several projects that you can see on my GitHub account."
+        title: "Part-time",
+        describtion: `I worked as a cashier at a Japanese restaurant during my participation in the Work and Travel program in the USA `
     }
 ]
 
 export const toolData:StaticImageData[] =
 [
-    assets.Vscode , assets.MongoDb , assets.GitHub
+    assets.Vscode , assets.MongoDb,assets.Mysql,assets.Postgres , assets.GitHub , assets.Golang , assets.Csharp , assets.Ts ,assets.Nextjs ,
 ]
 
 
