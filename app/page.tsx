@@ -2,7 +2,7 @@
 import NavBar from "./components/NavBar";
 import Header from "./components/Header";
 import About from "./components/About";
-import Project from "./components/Project";
+import Project from "./components/project";
 import Activity from "./components/Activity";
 import Footer from "./components/Footer";
 import { useEffect, useState } from "react";

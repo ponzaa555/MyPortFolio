@@ -8,7 +8,7 @@ type ProjectProps = {
     isDarkMode : boolean
 }
 
-const Project = ({isDarkMode }:ProjectProps) => {
+const project = ({isDarkMode }:ProjectProps) => {
     return(
         <motion.div id="project" className=" w-full px-[12%] py-10 scroll-mt-20"
         initial={{opacity:0}}
@@ -95,4 +95,4 @@ const Project = ({isDarkMode }:ProjectProps) => {
     )
 }
 
-export default Project;
+export default project;
