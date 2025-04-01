@@ -30,11 +30,11 @@ const Activity = ({isDarkMode }:ActivityProps) => {
             </div> */}
             <div className=" items-center justify-center">
             <ol className=" lg:flex mt-5 w-full">
-                <motion.li className="relative mb-6 sm:mb-2 w-[50]"
+                <motion.li className="relative mb-6 sm:mb-2 "
                     initial={{opacity:0}}
                     whileInView={{opacity:1}}
                     transition={{delay:0.8 , duration:0.3}}>
-                    <div className="flex items-center m">
+                    <div className="flex items-center ">
                         <div className="z-10 flex items-center justify-center w-20 h-20 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
                             <Image src={assets.AirPlan} alt="" className=" w-15 rounded-full"/> 
                         </div>
