@@ -52,7 +52,7 @@ const NavBar = ({isDarkMode , setIsDarkMode}: NavBarProps) => {
                     <li><a href="#top" className=" font-ovo">Home</a></li>
                     <li><a href="#about" className=" font-ovo">About Me</a></li>
                     <li><a href="#project" className=" font-ovo">Project</a></li>
-                    <li><a href="#intership" className=" font-ovo">InternShip</a></li>
+                    <li><a href="#intership" className=" font-ovo">journey</a></li>
                     <li><a href="#contact" className=" font-ovo">Contact</a></li>
                 </ul>
                 
@@ -87,7 +87,7 @@ const NavBar = ({isDarkMode , setIsDarkMode}: NavBarProps) => {
                     <li><a href="#top" className=" font-ovo" onClick={closeMenu}>Home</a></li>
                     <li><a href="#about" className=" font-ovo"onClick={closeMenu}>About Me</a></li>
                     <li><a href="#project" className=" font-ovo" onClick={closeMenu}>Project</a></li>
-                    <li><a href="#intership" className=" font-ovo" onClick={closeMenu}>InternShip</a></li>
+                    <li><a href="#intership" className=" font-ovo" onClick={closeMenu}>journey</a></li>
                     <li><a href="#contact" className=" font-ovo" onClick={closeMenu}>Contact</a></li>
                 </ul>
             </nav>

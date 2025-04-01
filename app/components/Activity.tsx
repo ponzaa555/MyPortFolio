@@ -17,59 +17,113 @@ const Activity = ({isDarkMode }:ActivityProps) => {
             initial={{y:-20 , opacity:0}}
             whileInView={{y:0 , opacity:1}}
             transition={{delay:0.3 , duration:0.5}}>
-                My Profile
+                journey 
             </motion.h4>
             <motion.h2 className=" text-center text-5xl font-ovo"
             initial={{y:-20 , opacity:0}}
             whileInView={{y:0 , opacity:1}}
             transition={{delay:0.5 , duration:0.5}}>
-                My Service
+                University Life
             </motion.h2>
-
-            <motion.p className=" text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo"
-            initial={{opacity:0}}
-            whileInView={{opacity:1}}
-            transition={{delay:0.7 , duration:0.5}}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ullam aliquam aspernatur repellendus quibusdam dolorum alias, 
-                in iusto soluta porro odit, neque blanditiis optio ea.
-                Esse reprehenderit repellendus deleniti ipsum nobis.
-            </motion.p> 
-            <motion.div className=" grid container my-10 gap-5 dark:text-black"
-            initial={{opacity:0}}
-            whileInView={{opacity:1}}
-            transition={{delay:0.9 , duration:0.5}}
-            >
-                {
-                    ActivityAssets.map((activity,index) => (
-                        <motion.div key={index} style={{backgroundImage : `url(${activity.bgImage})`}}
-                        className=" aspect-square bg-no-repeat  bg-cover bg-center rounded-lg
-                         relative cursor-pointer group"
-                         whileHover={{scale : 1.05}}
-                         transition={{duration:0.3}}>
-                            <div className=" bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2
-                                py-3 px-5 items-center justify-between duration-500 hover:bottom-7 flex">
-                                <div>
-                                        <h2 className=" font-semibold">{activity.tittle}</h2>
-                                        <p className=" text-sm text-gray-700 ">{activity.describtion}</p>
-                                </div>
-                                <div className=" border border-black rounded-full w-9 aspect-square flex items-center justify-center
-                                     shadow-[2px_2px_0px_#000] group-hover:bg-lime-300 transition">
-                                    <Image src={assets.SendIcon} alt="send-icon" className=" w-5"/>
-                                </div>
-                            </div>
-                        </motion.div>
-                    ))}
-            </motion.div>
-                    <motion.a href="" className="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px]
-                        border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500
-                        dark:text-white dark:border-white dark:hover:bg-darkHover cursor-pointer"
-                        initial={{opacity:0}}
-                        whileInView={{opacity:1}}
-                        transition={{delay:1.1 , duration:0.5}}>
-                        Show more 
-                        <Image src={isDarkMode ? assets.RightArrowBoldDark : assets.RightArrowBold} alt="right-arrow" className=" w-4"/>
-                    </motion.a> 
+            {/* <div className=" text-center items-center">
+                <Image/>
+            </div> */}
+            <div className=" items-center justify-center">
+            <ol className=" lg:flex mt-5 w-full">
+                <motion.li className="relative mb-6 sm:mb-2 w-[50]"
+                    initial={{opacity:0}}
+                    whileInView={{opacity:1}}
+                    transition={{delay:0.8 , duration:0.3}}>
+                    <div className="flex items-center m">
+                        <div className="z-10 flex items-center justify-center w-20 h-20 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                            <Image src={assets.AirPlan} alt="" className=" w-15 rounded-full"/> 
+                        </div>
+                        <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                    </div>
+                    <div className="mt-3 sm:pe-8 w-[250px]">
+                        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">First Years</h3>
+                        <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">April 2021</time>
+                        <p className="text-base font-normal text-gray-500 dark:text-gray-400 ">
+                            During my semester break, I participated in a work and travel program in the United States, 
+                            where I served as a cashier at a Japanese restaurant for two months.
+                        </p>
+                    </div>
+                </motion.li>
+                <motion.li className="relative mb-6 sm:mb-2 "
+                initial={{opacity:0}}
+                whileInView={{opacity:1}}
+                transition={{delay:1.1 , duration:0.3}}>
+                    <div className="flex items-center">
+                        <div className="z-10 flex items-center justify-center w-20 h-20 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                        <Image src={assets.Techer} alt="" className=" w-15 rounded-full"/> 
+                        </div>
+                        <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                    </div>
+                    <div className="mt-3 sm:pe-8 w-[250px]">
+                        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Second Year</h3>
+                        <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">April 2022</time>
+                        <p className="text-base font-normal text-gray-500 dark:text-gray-400 max-w-6xl">
+                            I worked part-time as a math tutor for three students, 
+                            helping them prepare for their university applications.
+                        </p>
+                    </div>
+                </motion.li>
+                <motion.li className="relative mb-6 sm:mb-2 "
+                initial={{opacity:0}}
+                whileInView={{opacity:1}}
+                transition={{delay:1.4 , duration:0.3}}>
+                    <div className="flex items-center">
+                        <div className="z-10 flex items-center justify-center w-20 h-20 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                           <Image src={assets.CompanyPic} alt="" className=" w-15 h-15 rounded-full"/>
+                        </div>
+                        <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                    </div>
+                    <div className="mt-3 sm:pe-8 w-[250px]">
+                        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Third Year</h3>
+                        <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">April 2023</time>
+                        <p className="text-base font-normal text-gray-500 dark:text-gray-400 max-w-6xl">
+                        I had the opportunity to intern at T.C.C., a technology solutions company, 
+                        where I worked as a C# backend developer. During my internship, 
+                        I` developed a system for POS machines, strengthening my skills in software development.
+                        </p>
+                    </div>
+                </motion.li>
+                <motion.li className="relative mb-6 sm:mb-2 "
+                initial={{opacity:0}}
+                whileInView={{opacity:1}}
+                transition={{delay:1.7 , duration:0.3}}>
+                    <div className="flex items-center">
+                        <div className="z-10 flex items-center justify-center w-20 h-20 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                        <Image src={assets.ProjectSenior} alt="" className=" w-15  rounded-full"/>
+                        </div>
+                        <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                    </div>
+                    <div className="mt-3 sm:pe-8 w-[250px]">
+                        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Fourth Years</h3>
+                        <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">April 2024</time>
+                        <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+                        For my senior project, I developed a trip-planning website from scratch, 
+                        incorporating features such as a chat system, interactive user engagement, and collaborative planning tools.
+                        </p>
+                    </div>
+                </motion.li>
+                <motion.li className="relative mb-6 sm:mb-2 "
+                initial={{opacity:0}}
+                whileInView={{opacity:1}}
+                transition={{delay:2 , duration:0.3}}>
+                    <div className="flex items-center">
+                        <div className="z-10 flex items-center justify-center w-20 h-20 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                        <Image src={assets.Waiting} alt="" className=" w-15  rounded-full"/>
+                        </div>
+                        {/* <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div> */}
+                    </div>
+                    <div className="mt-3 sm:pe-8 w-[250px]">
+                        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Waiting ...</h3>
+                       
+                    </div>
+                </motion.li>
+            </ol>
+            </div>
         </motion.div>
     )
 }

@@ -35,6 +35,22 @@ import Csharp from "./Csharp.png"
 import Mysql from "./mySql.png"
 import Postgres from "./postgrest.png"
 import Nextjs from "./NextIcon.png"
+import LiveBoard from "./liveBoard.png"
+import Tripgather from "./Tripgather.png"
+import GYM from "./GYM.png"
+import SirLocker from "./sirLocker.jpg"
+import JWT from "./jwt.png"
+import GitPng from "./github-mark.png"
+import Vercel from "./vercel.svg"
+import GitWhite from "./github-mark-white.png"
+import AirPlan from "./airplane.png"
+import Techer from "./teacher.jpg"
+import ProjectSenior from "./projectIcon.png"
+import CompanyPic from "./CompanyPic.jpg"
+import Waiting from "./waiting.png"
+import LinkIn from "./linkIn.webp"
+import Instragram from "./Instragran.png"
+import FaceBook from "./facebook.jpg"
 export const assets = {
     Profile,
     BackgroutProfile,
@@ -61,7 +77,18 @@ export const assets = {
     Csharp,
     Mysql,
     Postgres,
-    Nextjs
+    Nextjs,
+    GitPng,
+    Vercel,
+    GitWhite,
+    AirPlan,
+    ProjectSenior,
+    Techer,
+    CompanyPic,
+    Waiting,
+    LinkIn,
+    Instragram,
+    FaceBook
 }
 
 type Info = {
@@ -76,6 +103,7 @@ type Project = {
     title: string;
     describion: string;
     link: string;
+    githubLink : string
 }
 
 type ActivityData = {
@@ -101,7 +129,8 @@ export const infoList :Info[] = [
         iconDark: ProjectIconDark,
         title: "Part-time",
         describtion: `I worked as a cashier at a Japanese restaurant during my participation in the Work and Travel program in the USA `
-    }
+    },
+    
 ]
 
 export const toolData:StaticImageData[] =
@@ -113,22 +142,46 @@ export const toolData:StaticImageData[] =
 
 export const projectList:Project[] = [
     {
-        icon: WebIcon,
-        title: "Web Development",
-        describion: "I can create a website using HTML, CSS, and JavaScript. I can also use frameworks like React, Next.js, and Tailwind CSS.",
-        link: ""
+        icon: LiveBoard,
+        title: "LiveBoard",
+        describion: "Developed a collaborative board website enabling note-taking, text input, and drawing, built with TypeScript, Next.js, and Liveblock.io for real-time synchronization.",
+        link: "https://tripgether-three.vercel.app/",
+        githubLink : "http://github.com/ponzaa555/Share_Board"
     },
     {
-        icon: MobileIcon,
-        title: "Mobile Development",
-        describion: "I can create a mobile application using React Native.",
-        link: ""
+        icon: Tripgather,
+        title: "Web Travel Blogs",
+        describion: "Developed a travel website featuring chat, collaborative planning, blog exploration, and user engagement, leveraging Next.js, TypeScript, Convex, Liveblock.io, and the Google Maps API.",
+        link: "",
+        githubLink:"https://github.com/ponzaa555/Tripgether"
     },
     {
-        icon: GraphicIcon,
-        title: "Graphic Design",
-        describion: "I can create a logo, banner, and other graphic design using Adobe Illustrator.",
-        link: ""
+        icon: GYM,
+        title: "GYM Webstie",
+        describion: "Developed a website that displays gym class schedules and highlights membership benefits",
+        link: "",
+        githubLink:"https://github.com/ponzaa555/GYM_PON"
+    },
+    {
+        icon : Golang,
+        title: "Scraping blog content from a URL.",
+        describion : "Building a Golang-based backend server to scrape blog content from the internet, leveraging Chi Router and PostgreSQL for efficient data management.",
+        link:"",
+        githubLink:"https://github.com/ponzaa555/Golang_Rss"
+    },
+    {
+        icon : SirLocker,
+        title: "Locker with ESP32",
+        describion : "Developed a C++ based locker system to store car or PIN numbers, focusing on managing and implementing data communication between the hardware board.",
+        link:"",
+        githubLink:"https://github.com/Sir-Locker"
+    },
+    {
+        icon : JWT,
+        title: "Authentication with JWT",
+        describion : "Implemented JWT-based authentication in Go, providing secure user verification and access control for the application.",
+        link:"",
+        githubLink:"https://github.com/ponzaa555/Go_JWT"
     }
 ]
 

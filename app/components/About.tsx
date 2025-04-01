@@ -7,7 +7,7 @@ type AboutProps = {
 }
 const About = ({isDarkMode}:AboutProps) => {
     return(
-    <motion.div id="about" className=" w-full px-[12%] py-10 scroll-mt-20"
+    <motion.div id="about" className=" w-full px-0 md:px-[12%] py-10 scroll-mt-20"
         initial={{opacity:0}}
         whileInView={{opacity:1 , y:0}}
         transition={{duration:2}}
@@ -34,11 +34,11 @@ const About = ({isDarkMode}:AboutProps) => {
                     <Image src={assets.Profile} alt="Profile-About" className=" w-full rounded-3xl"/>
                 </motion.div>
                 {/* description */}
-                <motion.div className=" flex-1"
+                <motion.div className=" flex-1 w-full"
                 initial={{opacity:0}}
                 whileInView={{opacity:1}}
                 transition={{duration:0.6 , delay:0.8}}>
-                     <p className=" mb-10 max-w-2xl font-ovo">
+                     <p className="flex mb-10 max-w-3xl font-ovo overflow-x-scroll mx-auto">
                      I recently graduated with a Bachelor's degree in Computer Engineering from Kasetsart University. 
                      During my internship at TCC Company, I worked as a backend developer, 
                      where I contributed to enhancing the system for point-of-sale machines using C#, .NET Framework, and Golang. 
